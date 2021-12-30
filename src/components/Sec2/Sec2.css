@@ -1,0 +1,113 @@
+.sec2-container{
+    position: relative;
+    top: -8rem;
+}
+.sec2-container p:nth-child(1){
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    color: var(--cyan);
+}
+.sec2-container p:nth-child(2){
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 0;
+}
+.sec2-container .s2-card-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 15%;
+}
+.sec2-container .s2-card-parent .s2-card{
+    width: 20%;
+    text-align: center;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px var(--lightgrey);
+    border-radius: 5px;
+}
+.sec2-container .s2-card-parent .s2-card .logo-parent{
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid var(--darkcyan);
+    background-color: var(--cyan);
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    font-size: 30px;
+}
+.sec2-container .s2-card-parent .s2-card .s2-label{
+    font-size: normal;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.sec2-container .s2-card-parent .s2-card .s2-text{
+    font-size: small;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1100px) {
+    .sec2-container .s2-card-parent{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .sec2-container .s2-card-parent .s2-card .logo-parent{
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .sec2-container{
+        top: -5rem;
+    }
+    .sec2-container .s2-card-parent{
+        padding-left: 8%;
+        padding-right: 8%;
+        flex-wrap: wrap;
+
+    }
+    .sec2-container .s2-card-parent .s2-card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .sec2-container{
+        margin-top: 2rem;
+    }
+    .sec2-container .s2-card-parent{
+        padding-left: 4%;
+        padding-right: 8%;
+        padding-top: 1rem;
+    }
+    .sec2-container{
+        top: 1rem;
+    }
+    .sec2-container .s2-card-parent .s2-card .logo-parent{
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .sec2-container .s2-card-parent .s2-card .s2-label{
+        font-size: small;
+    }
+    .sec2-container .s2-card-parent .s2-card .s2-text{
+        font-size: x-small;
+    }
+    
+}

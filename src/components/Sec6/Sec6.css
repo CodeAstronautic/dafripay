@@ -1,0 +1,75 @@
+.sec6-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sec6-container .sec6-l{
+    padding-left:15%;
+    /* padding-top: 5rem; */
+}
+.sec6-container .sec6-l p:nth-child(1){
+    font-size: small;
+    font-weight: 700;
+    color: var(--cyan);
+}
+.sec6-container .sec6-l p:nth-child(2){
+    font-size:28px;
+    font-weight: 600;
+    margin: 0;
+}
+.sec6-container .sec6-r{
+    padding-right: 15%;
+}
+.sec6-container .sec6-r .s6-card{
+    padding: 20px ;
+    box-shadow: 0px 0px 8px var(--lightgrey);
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.sec6-container .sec6-r .s6-card .s6-input{
+    padding: 10px ;
+    border: 2px solid var(--lightgrey) !important;
+    outline: none;
+    border-radius: 5px;
+    width: 18rem;
+    margin-bottom: 15px;
+}
+.s16-btn{
+    padding: 8px 30px;
+    color: #fff;
+    background-color: var(--cyan);
+    width: fit-content;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1100px) {
+    
+}
+@media screen and (max-width: 800px) {
+    .sec6-container .sec6-l{
+        padding-left: 5%;
+    }
+    .sec6-container .sec6-r{
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .sec6-container .sec6-l{
+        padding-left: 4%;
+    }
+    .sec6-r{
+        width: 100%;
+    }
+    .sec6-r .s6-card{
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 5%;
+    }
+    .sec6-container .sec6-r .s6-card .s6-input{
+        width: 80%;
+    }
+    .sec6-container{
+        flex-wrap: wrap;
+    }
+}

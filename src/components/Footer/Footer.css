@@ -1,0 +1,58 @@
+.f-container{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 15%;
+    background-color: var(--darkblue);
+    color: #fff;
+    font-size: 15px;
+}
+
+.f-container .f-parent .fp-l img{
+    height: 35px;
+    width: 120px;
+}
+.f-container .f-parent .fp-lr{
+    list-style: none;
+    padding-left: 0;
+    width: fit-content;
+}
+.f-container .f-parent{
+    width: 23%;
+}
+.f-container .f-parent .fp-label{
+    font-weight: normal;
+    color: var(--cyan);
+}
+.f-container .f-parent .f-links li{
+    font-size: smaller ;
+    width: fit-content;
+}
+
+.f-container .f-parent .f-links li span{
+    font-size: xx-small;
+    padding-right: 10px;
+}
+@media screen and (max-width: 1100px) {
+    .f-container{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .f-container{
+        flex-wrap: wrap;
+    }
+    .f-container .f-parent{
+        width: fit-content;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .f-container{
+        flex-wrap: wrap;
+    }
+    .f-container .f-parent{
+        width: fit-content;
+        margin: 0 10px;
+    }
+}
